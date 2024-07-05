@@ -26,9 +26,9 @@ export default function Register() {
     e.preventDefault()
 
     axios.post('http://localhost:5000/register', {username , password, email})
-    .then( result => {console.log(result)
+    .then( 
     navigate('/login')
-    })
+  )
     .catch(err => console.log(err))
   }
 
